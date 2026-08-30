@@ -14,15 +14,18 @@ interface RouterContextType {
 const RouterContext = createContext<RouterContextType | null>(null);
 
 /**
- * Returns the detected base path (e.g. '/MZA-Tech-Zone' or '') without trailing slash.
+ * Returns the detected base path (e.g. '/Web-Developerandranker' or '') without trailing slash.
  */
 export function getBasePath(): string {
-  // Vite injects import.meta.env.BASE_URL (e.g. '/MZA-Tech-Zone/' or '/')
+  // Vite injects import.meta.env.BASE_URL (e.g. '/Web-Developerandranker/' or '/')
   const envBase = (import.meta.env.BASE_URL || '/').replace(/\/+$/, '');
 
   if (typeof window !== 'undefined') {
     if (envBase && envBase !== '/' && window.location.pathname.startsWith(envBase)) {
       return envBase;
+    }
+    if (window.location.pathname.startsWith('/Web-Developerandranker')) {
+      return '/Web-Developerandranker';
     }
     if (window.location.pathname.startsWith('/MZA-Tech-Zone')) {
       return '/MZA-Tech-Zone';
@@ -42,6 +45,8 @@ export function getRouteFromPathname(rawPath: string): string {
   const base = getBasePath();
   if (base && clean.startsWith(base)) {
     clean = clean.slice(base.length);
+  } else if (clean.startsWith('/Web-Developerandranker')) {
+    clean = clean.slice('/Web-Developerandranker'.length);
   } else if (clean.startsWith('/MZA-Tech-Zone')) {
     clean = clean.slice('/MZA-Tech-Zone'.length);
   }

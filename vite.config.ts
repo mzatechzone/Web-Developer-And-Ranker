@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: process.env.BASE_PATH || '/MZA-Tech-Zone/',
+    base: process.env.BASE_PATH || '/Web-Developerandranker/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
