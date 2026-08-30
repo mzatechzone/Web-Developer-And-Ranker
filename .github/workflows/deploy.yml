@@ -43,7 +43,7 @@ jobs:
       - name: Build project for GitHub Pages
         run: npm run build
         env:
-          BASE_PATH: /Web-Developerandranker/
+          BASE_PATH: /MZA-Tech-Zone/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

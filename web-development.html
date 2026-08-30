@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Web Development & High-Speed Website Design | MZA Tech Zone</title>
+    <meta name="description" content="Modern, mobile-responsive web development engineered with lightweight code, sub-second load times, Core Web Vitals optimization, and high-conversion UX." />
+    <meta name="keywords" content="custom web development, responsive web design, mobile friendly websites, Core Web Vitals optimization, speed optimization, front-end engineering, business website development" />
+    <meta name="author" content="MZA Tech Zone" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/gLbq78Pz/BLUE-TRANS-LOGO.png" />
+    <link rel="canonical" href="https://mzatechzone.pro/web-development.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mzatechzone.pro/web-development.html" />
+    <meta property="og:title" content="Custom Web Development & High-Speed Website Design | MZA Tech Zone" />
+    <meta property="og:description" content="Modern, mobile-responsive web development engineered with lightweight code, sub-second load times, Core Web Vitals optimization, and high-conversion UX." />
+    <meta property="og:site_name" content="MZA Tech Zone" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Custom Web Development & High-Speed Website Design | MZA Tech Zone" />
+    <meta name="twitter:description" content="Modern, mobile-responsive web development engineered with lightweight code, sub-second load times, Core Web Vitals optimization, and high-conversion UX." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="reading-progress-bar"></div>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="./index.html" class="brand-logo-link" id="header-brand-logo">
+          <img src="https://i.ibb.co/gLbq78Pz/BLUE-TRANS-LOGO.png" alt="BLUE-TRANS-LOGO" class="brand-logo-img" border="0" />
+          <span class="brand-title">MZA Tech <span>Zone</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li class="nav-dropdown">
+            <a href="./services.html" class="nav-link active">Services ▾</a>
+            <ul class="nav-dropdown-menu">
+              <li class="nav-dropdown-item"><a href="./web-development.html">⚡ Web Development</a></li>
+              <li class="nav-dropdown-item"><a href="./seo.html">📈 SEO Services</a></li>
+              <li class="nav-dropdown-item"><a href="./google-business-profile.html">📍 Google Business Profile</a></li>
+              <li class="nav-dropdown-item" style="border-top: 1px solid var(--border-subtle);"><a href="./services.html">All Services Overview</a></li>
+            </ul>
+          </li>
+          <li><a href="./projects.html" class="nav-link">Projects</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="./contact.html" class="btn btn-primary btn-sm">Get Consultation</a>
+          <button id="mobile-menu-open" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
+    <aside id="mobile-drawer" class="mobile-drawer">
+      <div class="mobile-drawer-header">
+        <a href="./index.html" class="brand-logo-link">
+          <img src="https://i.ibb.co/gLbq78Pz/BLUE-TRANS-LOGO.png" alt="BLUE-TRANS-LOGO" class="brand-logo-img" border="0" />
+          <span class="brand-title">MZA Tech <span>Zone</span></span>
+        </a>
+        <button id="mobile-menu-close" class="mobile-drawer-close">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="./index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="./services.html" class="mobile-nav-link">All Services</a></li>
+        <li><a href="./web-development.html" class="mobile-nav-link active" style="padding-left: 1.75rem; font-size: 0.9rem;">↳ Web Development</a></li>
+        <li><a href="./seo.html" class="mobile-nav-link" style="padding-left: 1.75rem; font-size: 0.9rem;">↳ SEO Services</a></li>
+        <li><a href="./google-business-profile.html" class="mobile-nav-link" style="padding-left: 1.75rem; font-size: 0.9rem;">↳ Google Business Profile</a></li>
+        <li><a href="./projects.html" class="mobile-nav-link">Portfolio & Projects</a></li>
+        <li><a href="./about.html" class="mobile-nav-link">About Agency</a></li>
+        <li><a href="./contact.html" class="mobile-nav-link">Contact Us</a></li>
+      </ul>
+      <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+        <a href="./contact.html" class="btn btn-primary" style="width: 100%;">Schedule Consultation</a>
+      </div>
+    </aside>
+
+    <main>
+      <!-- Hero -->
+      <section class="section" style="padding-top: 3.5rem; padding-bottom: 3.5rem; text-align: center; background: rgba(13, 18, 30, 0.3);">
+        <div class="container">
+          <nav class="breadcrumbs" style="justify-content: center;">
+            <a href="./index.html">Home</a>
+            <span>/</span>
+            <a href="./services.html">Services</a>
+            <span>/</span>
+            <span class="current">Web Development</span>
+          </nav>
+          <div class="badge badge-cyan" style="margin-bottom: 1rem;">High Performance & Conversion</div>
+          <h1>Modern Web Development Engineered for Speed & Conversions</h1>
+          <p style="max-width: 760px; margin: 1rem auto 2rem; font-size: 1.15rem;">
+            We build custom, accessible, and ultra-responsive websites that establish immediate credibility, load in milliseconds, and turn qualified visitors into paying customers.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="./contact.html" class="btn btn-primary btn-lg">Request Project Proposal &rarr;</a>
+            <a href="./projects.html" class="btn btn-secondary btn-lg">View Web Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview & Features Grid -->
+      <section class="section">
+        <div class="container">
+          <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+            <h2>The Technical Foundation Your Business Deserves</h2>
+            <p style="margin-top: 0.75rem;">A slow, outdated, or confusing website directly erodes trust and repels potential revenue. We engineer high-performing web platforms with precision.</p>
+          </div>
+
+          <div class="grid-cards">
+            <div class="glass-card">
+              <div class="service-icon-box cyan">⚡</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Ultra-Fast Page Speed</h3>
+              <p style="font-size: 0.9rem;">Sub-second load times and Core Web Vitals optimization to reduce bounce rates and boost conversion rates.</p>
+            </div>
+            <div class="glass-card">
+              <div class="service-icon-box cyan">🎯</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Conversion-Centric UX</h3>
+              <p style="font-size: 0.9rem;">Strategic visual hierarchy, intuitive navigation paths, and frictionless lead forms that capture prospects.</p>
+            </div>
+            <div class="glass-card">
+              <div class="service-icon-box cyan">📱</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Mobile-First Precision</h3>
+              <p style="font-size: 0.9rem;">Flawless visual rendering and tactile touch interactions tailored for mobile smartphones and tablets.</p>
+            </div>
+            <div class="glass-card">
+              <div class="service-icon-box cyan">🔍</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">SEO-Native Structure</h3>
+              <p style="font-size: 0.9rem;">Semantic HTML5, Schema.org structured data, Open Graph cards, and crawl-friendly URL hierarchies.</p>
+            </div>
+            <div class="glass-card">
+              <div class="service-icon-box cyan">🛡️</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Ironclad Security & Uptime</h3>
+              <p style="font-size: 0.9rem;">Modern HTTPS encryption, security headers, form sanitization, and clean dependency architecture.</p>
+            </div>
+            <div class="glass-card">
+              <div class="service-icon-box cyan">📈</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Scalable Codebase</h3>
+              <p style="font-size: 0.9rem;">Modular code designed to effortlessly expand as your company adds new service lines and features.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Web Dev Deliverables -->
+      <section class="section" style="background: rgba(13, 18, 30, 0.4);">
+        <div class="container">
+          <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+            <div class="badge badge-cyan" style="margin-bottom: 1rem;">Solutions</div>
+            <h2>Web Development Offerings</h2>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+            <div class="glass-card">
+              <h3 style="font-size: 1.25rem; color: #38bdf8; margin-bottom: 0.5rem;">Corporate & Business Websites</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Custom digital hubs designed to establish industry authority, showcase services, and communicate complex offerings with clarity.</p>
+              <ul class="service-list">
+                <li><span class="check-icon">✓</span> Tailored brand aesthetic</li>
+                <li><span class="check-icon">✓</span> Multi-step inquiry workflows</li>
+                <li><span class="check-icon">✓</span> Service catalog presentations</li>
+              </ul>
+            </div>
+            <div class="glass-card">
+              <h3 style="font-size: 1.25rem; color: #38bdf8; margin-bottom: 0.5rem;">High-Converting Landing Pages</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Laser-focused landing pages engineered for specific advertising campaigns, product launches, or event promotions.</p>
+              <ul class="service-list">
+                <li><span class="check-icon">✓</span> Frictionless lead capture</li>
+                <li><span class="check-icon">✓</span> Trust badges & social proof</li>
+                <li><span class="check-icon">✓</span> Fast single-purpose layout</li>
+              </ul>
+            </div>
+            <div class="glass-card">
+              <h3 style="font-size: 1.25rem; color: #38bdf8; margin-bottom: 0.5rem;">Website Redesign & Modernization</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Transform slow, legacy websites into high-speed modern digital assets with improved conversion rates.</p>
+              <ul class="service-list">
+                <li><span class="check-icon">✓</span> Core Web Vitals overhaul</li>
+                <li><span class="check-icon">✓</span> Responsive UI refresh</li>
+                <li><span class="check-icon">✓</span> SEO migration protection</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section">
+        <div class="container">
+          <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+            <div class="badge badge-cyan" style="margin-bottom: 1rem;">Questions</div>
+            <h2>Web Development FAQ</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button class="faq-question-btn">
+                <span>What technologies do you use for web development?</span>
+                <span class="faq-icon">▾</span>
+              </button>
+              <div class="faq-answer">
+                <p>We build websites using clean, lightweight modern web standards—semantic HTML5, modern responsive CSS, and high-performance vanilla JavaScript or lightweight frameworks. We do not rely on bloated templates or unnecessary heavy plugins.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question-btn">
+                <span>Will my website be mobile friendly?</span>
+                <span class="faq-icon">▾</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. Every website we build is designed mobile-first and tested extensively across multiple smartphone viewports, tablets, laptops, and ultra-wide desktop monitors.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question-btn">
+                <span>How is SEO integrated into the development process?</span>
+                <span class="faq-icon">▾</span>
+              </button>
+              <div class="faq-answer">
+                <p>We build search engine friendliness into the core architecture: clean heading hierarchy (H1-H6), semantic tags, Schema.org JSON-LD structured data, XML sitemaps, robots.txt directives, and optimized asset delivery for Core Web Vitals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section style="padding: 5rem 0; background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(37, 99, 235, 0.15) 100%); text-align: center; border-top: 1px solid rgba(6, 182, 212, 0.2);">
+        <div class="container">
+          <div style="max-width: 700px; margin: 0 auto;">
+            <h2>Ready to Build a High-Performance Website?</h2>
+            <p style="margin: 1rem auto 2rem; color: #cbd5e1;">Get in touch today for a free project discovery session and timeline estimate.</p>
+            <a href="./contact.html" class="btn btn-primary btn-lg">Start Your Web Project &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="./index.html" class="brand-logo-link" style="margin-bottom: 1rem;">
+              <img src="https://i.ibb.co/gLbq78Pz/BLUE-TRANS-LOGO.png" alt="BLUE-TRANS-LOGO" class="brand-logo-img" border="0" />
+              <span class="brand-title">MZA Tech <span>Zone</span></span>
+            </a>
+            <p style="font-size: 0.875rem;">Professional web development, SEO strategies, and Google Business Profile management.</p>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 1.25rem;">Services</h4>
+            <ul class="footer-links">
+              <li><a href="./web-development.html">Web Development</a></li>
+              <li><a href="./seo.html">SEO Services</a></li>
+              <li><a href="./google-business-profile.html">Google Business Profile</a></li>
+              <li><a href="./services.html">All Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 1.25rem;">Company</h4>
+            <ul class="footer-links">
+              <li><a href="./about.html">About Agency</a></li>
+              <li><a href="./projects.html">Portfolio</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="margin-bottom: 1.25rem;">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="./terms-and-conditions.html">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 MZA Tech Zone. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
